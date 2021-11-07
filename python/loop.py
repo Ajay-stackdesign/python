@@ -159,7 +159,7 @@
 # list10 = [1, 2, 3, 4, 5, 6, 7, 100, 110, 21, 33, 32, 2, 4];
 # even_number(list10);
     
-from collections import Counter
+'''from collections import Counter
 
 
 # my_list = [1, 2, 3, 4, 5, 6, 7, 100, 110, 21, 33, 32, 2, 4];
@@ -188,6 +188,48 @@ def cummalative_number(list):
 
 list10 = [1, 2, 3, 4, 5, 6, 7, 100, 110, 21, 33, 32, 2, 4]; 
 cummalative_number(list10)
+
+def func():
+    for i in range(5):
+        print(i)
+func();
+
+for i in range(10,15):
+    for j in range(10,15):
+        print(i*j);
+
+# Write a program to print first 10 natural number.
+for x in range(1,11):
+    print(x);
+
+# Write a program to print first 10 even numbers.
+for i in range(2,21):
+    if i % 2 == 0:
+        print(i)
+
+number = int(input("enter the number"))
+
+for i in range(0,number):
+    if i % 2 != 0:
+        print(i);'''
+# even = []
+user = int(input("enter the number"))
+even = []
+# add =[]
+for i in range(1,user,1):
+    if i % 2 == 0:
+        even.append(i)
+        
+        # even.append(i)
+even.reverse()
+print(even)
+
+for i in (1,11):
+    print(i)
+
+
+
+
         
 
 
