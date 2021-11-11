@@ -25,4 +25,4 @@ print(my_list1[::-1])
 working_list = [10,20,30,40];
 
 original_list = [i*i for i in working_list];
-print(original_list)
+print(original_list);
