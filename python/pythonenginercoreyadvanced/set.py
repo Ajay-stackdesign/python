@@ -28,3 +28,9 @@ myset.add("world")
 myset.pop()
 print(myset)
 
+
+set = {1,2,3,3,4,5,4};
+
+for i in set:
+    print(i)
+
