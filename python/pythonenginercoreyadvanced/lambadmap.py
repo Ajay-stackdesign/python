@@ -77,4 +77,9 @@ sum3 = list(map(lambda x: str.upper(x),animals))
 print(sum3)
 
 
+snakes = ["anaconda","indian rock python"]
+snake = list(map(lambda ani : str.lower(ani),snakes))
+print(snake)
+
+
 
