@@ -26,3 +26,6 @@ working_list = [10,20,30,40];
 
 original_list = [i*i for i in working_list];
 print(original_list);
+
+x = [i for i in range(10) if i%2 == 0]
+print(x)
