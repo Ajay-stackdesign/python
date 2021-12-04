@@ -8,7 +8,7 @@ print(dict)
 
 # updating values in dictionaries
 
-dict["name"]="sahani";
+dict["name"]="ajay"
 print(dict)
 
 # delete values in dictonaries
