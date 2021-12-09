@@ -1,23 +1,23 @@
-#creating a class with constructorr:
+# creating a class with constructorr:
 
 # from _typeshed import Self
 
 
-# class Parent:
+class Employee:
 
-#     def __init__ (self,name,age,salary):
-#         self.name = name ;
-#         self.age = age;
-#         self.salary = salary ;
+    def __init__ (self,name,age,salary):
+        self.name = name ;
+        self.age = age;
+        self.salary = salary ;
 
-#     def show_details(self):
-#         print("the name of the parent is",self.name)
-#         print("the age ogf the employes is",self.age);
-#         print("the salary of the empployer is",self.salary)
+    def show_details(self):
+        print("the name of the parent is",self.name)
+        print("the age ogf the employes is",self.age);
+        print("the salary of the empployer is",self.salary)
 
-# my = Parent("ajay",23,234);
+my = Employee("ajay",23,234);
 
-# my.show_details()
+my.show_details()
 
 
 class Parent1:
