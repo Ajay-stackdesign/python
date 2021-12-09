@@ -8,8 +8,8 @@
 # print(unzipp) 
 
 
-list3 = [1,2,3,4]
-li = ["ajay","sahani","list"]
+list3 = [1,2,3,4,5]
+li = ["ajay","sahani","list","geeta","sahani"]
 zipp = list(zip(list3,li))
 print(zipp)
 
