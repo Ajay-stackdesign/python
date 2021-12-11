@@ -30,5 +30,7 @@ print(original_list);
 x = [i for i in range(10) if i%2 == 0]
 print(x)
 
-t = ["mango" if x%2 ==0 else "grapes" for x in range(10)]
+t = ["mango" if x%2 == 0 else "grapes" for x in range(10)]
 print(t)
+
+print("hello")
