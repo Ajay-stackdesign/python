@@ -149,10 +149,10 @@
 # a = [x for x in range(2)]
 # print(a)
 
-# matrix = [[x*y*z for x in range(1)] for y in range(1) for z in range(2)]
-# print(matrix)
-list1 = [1,2]
-list = [2,4,6,8,10];
-list.append(list1)
-list.reverse();
-print(list)
+matrix = [[x*y*z for x in range(1)] for y in range(1) for z in range(2)]
+print(matrix)
+# list1 = [1,2]
+# list = [2,4,6,8,10];
+# list.append(list1)
+# list.reverse();
+# print(list)
