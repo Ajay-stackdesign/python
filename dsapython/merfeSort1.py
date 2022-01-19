@@ -38,15 +38,17 @@ def merge_two_sorted_lists(a,b,arr):
         k+=1
 
 if __name__ == '__main__':
-    # test_cases = [
-    #     [10, 3, 15, 7, 8, 23, 98, 29],
-    #     [],
-    #     [3],
-    #     [9,8,7,2],
-    #     [1,2,3,4,5]
-    # ]
-    arr = [10, 3, 15, 7, 8, 23, 98, 29]
+    test_cases = [
+        # [10, 3, 15, 7, 8, 23, 98, 29],
+        # [],
+        # [3],
+        # [9,8,7,2],
+        # [1,2,3,4,5]
+        [5,2,3,1],
+        [5,1,1,2,0,0]
+    ]
+    # arr = [10, 3, 15, 7, 8, 23, 98, 29]
 
-    # for arr in test_cases:
-    merge_sort(arr)
-    print(arr)
+    for arr in test_cases:
+        merge_sort(arr)
+        print(arr)
