@@ -1,23 +1,75 @@
+# def merge_sort(arr):
+#     if len(arr) <=1 :
+#         return
+    
+#     mid = len(arr) //2
+
+#     left = arr[:mid]
+#     right = arr[mid:]
+
+#     merge_sort(left)
+#     merge_sort(right)
+#     merge_Sorted_list(left,right,arr)
+
+# def merge_Sorted_list(a,b,arr):
+#     lenA = len(a)
+#     lenB = len(b)
+
+#     i = j = k = 0
+
+#     while i < lenA and j < lenB:
+#         if a[i] <= b[j]:
+#             arr[k] = a[i]
+#             i +=1
+#         else:
+#             arr[k] = b[j]
+#             j +=1
+#         k +=1
+
+#     while i < lenA :
+#         arr[k] = a[i]
+#         i +=1
+#         k +=1
+#     while j < lenB :
+#         arr[k] = b[j]
+#         j +=1
+#         k +=1
+# if __name__ == '__main__':
+#     test_cases = [
+#         [10, 3, 15, 7, 8, 23, 98, 29],
+#         [],
+#         [3],
+#         [9,8,7,2],
+#         [1,2,3,4,5]
+#     ]
+
+#     for arr in test_cases:
+#         merge_sort(arr)
+#         print(arr)
+
+
+
+
+
 def merge_sort(arr):
-    if len(arr) <=1 :
+    if len(arr) <= 1:
         return
     
-    mid = len(arr) //2
-
+    mid = len(arr) // 2
     left = arr[:mid]
     right = arr[mid:]
 
     merge_sort(left)
     merge_sort(right)
-    merge_Sorted_list(left,right,arr)
 
-def merge_Sorted_list(a,b,arr):
+    merge_two_sorted_lists(left,right,arr)
+
+def merge_two_sorted_lists(a,b,arr):
     lenA = len(a)
     lenB = len(b)
+    i =j = k = 0
 
-    i = j = k = 0
-
-    while i < lenA and j < lenB:
+    while i< len(a) and j < len(b):
         if a[i] <= b[j]:
             arr[k] = a[i]
             i +=1
@@ -25,24 +77,19 @@ def merge_Sorted_list(a,b,arr):
             arr[k] = b[j]
             j +=1
         k +=1
-
-    while i < lenA :
+    
+    while i < len(a):
         arr[k] = a[i]
-        i +=1
-        k +=1
-    while j < lenB :
+        i+=1
+        k+=1
+    while j < len(b):
         arr[k] = b[j]
-        j +=1
-        k +=1
-if __name__ == '__main__':
-    test_cases = [
-        [10, 3, 15, 7, 8, 23, 98, 29],
-        [],
-        [3],
-        [9,8,7,2],
-        [1,2,3,4,5]
-    ]
+        j+=1
+        k+=1
 
-    for arr in test_cases:
-        merge_sort(arr)
-        print(arr)
+
+
+if __name__ == '__main__':
+    arr = [23,12,32,54,32,56,76,98,12,67]
+    merge_sort(arr)
+    print(arr)
